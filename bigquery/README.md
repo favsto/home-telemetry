@@ -1,0 +1,1 @@
+bq load --location=EU --format=csv --skip_leading_rows=1 home-alone-project:home_telemetry.environment ./home-telemetry-fake_device2_27_TZ.csv

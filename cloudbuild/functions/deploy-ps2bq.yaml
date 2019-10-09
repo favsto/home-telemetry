@@ -1,0 +1,15 @@
+steps:
+- name: gcr.io/cloud-builders/gcloud-slim
+  args: 
+  - 'functions'
+  - 'deploy'
+  - '${_FUNCTION_NAME}'
+  - '--source=https://source.developers.google.com/projects/home-alone-project/repos/bitbucket_faustofusaro_health-quality/moveable-aliases/develop/paths/functions/ps2bq'
+  - '--runtime=python37'
+  - '--trigger-topic=home-telemetry'
+  - '--region=europe-west1'
+  - '--memory=128MB'
+  - '--service-account=home-alone-project@appspot.gserviceaccount.com'
+  - '--timeout=60'
+  # - '--update-labels=deployment-tool=console-cloud'
+tags: ['ps2bq']

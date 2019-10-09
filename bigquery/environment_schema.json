@@ -1,0 +1,35 @@
+[
+    {
+        "name": "timestamp",
+        "type": "TIMESTAMP",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "registry_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "device_id",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "temperature",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "humidity",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "pressure",
+        "type": "FLOAT"
+    },
+    {
+        "name": "altitude",
+        "type": "FLOAT"
+    }
+]
